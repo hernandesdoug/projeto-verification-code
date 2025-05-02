@@ -1,0 +1,14 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+hmtl,
+body
+{
+  /* vh -  viewport height */
+  min-height: 100vh;
+}
