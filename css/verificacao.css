@@ -121,3 +121,6 @@ body
   pointer-events: auto;
 }
 
+a {
+  text-decoration: none;
+}

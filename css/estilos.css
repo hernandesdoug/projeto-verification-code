@@ -6,9 +6,128 @@
     font-family: "Bebas Neue", sans-serif;
 }
 
-hmtl,
-body
-{
-  /* vh -  viewport height */
-  min-height: 100vh;
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tela-login {
+  background-color: whitesmoke;
+  padding: 6px;
+  width: 400px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.titulo {
+  width: 350px;
+  height: 100px;
+  align-items: center;
+  text-align: center;
+  margin: 20px 10px 10px 10px;
+}
+
+form {
+  width: 350px;
+  height: 300px;
+  align-items: center;
+  text-align: center;
+  margin: 20px 10px 10px 10px;
+  flex-direction: column;
+  display: flex;
+  border: none;
+  border-radius: 50%;
+}
+
+.btn-api {
+  width: 350px;
+  height: 100px ;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-switch {
+  width: 200px;
+  margin-top: 40px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 0 7px 0 greenyellow;
+}
+
+.btn-switch button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 10x 29px;
+}
+
+.btn-color {
+  position: absolute;
+  width: 108px;
+  height :100%;
+  background: linear-gradient(to right, rgb(136, 243, 111), whitesmoke);
+  border-radius: 60px;
+  transition: .3s;
+}
+
+input[type="tel"], input[type="password"] {
+  border: none;
+  margin-top: 20px;
+  border-radius: 60px;
+  padding: 8px 0 8px 35px;
+  outline: none;
+  width: 100%;
+}
+
+label {
+  width: 350px;
+  height: 20px;
+  position: relative;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.div-check {
+  margin: 10px 0 0 5px;
+  width: 80%;
+  font-size: 13px;
+  position: relative;
+  justify-content: space-between;
+}
+button[type="submit"] {
+  background: green;
+  color: black;
+  border-radius: 30px;
+  width: 100%;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  font-size: 15px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+ .botao-login {
+  cursor: pointer;  
+  color: black;
+  background-color: rgb(159, 238, 79);
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: .05rem;
+  border-radius: 20px;
+  border: none;
+  opacity: .8;
+  transition: .3s;
+}
+
+a {
+  text-decoration: none;
 }

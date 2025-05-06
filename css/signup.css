@@ -1,0 +1,86 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Century Gothic';
+}
+
+body
+{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: whitesmoke;
+  align-items: center;
+}
+
+.tela-signup {
+    width: 400px;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.tela-signup form .cad-signup {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+.tela-signup .titulo {
+    width: 400px;
+    height: 20vh;
+    text-align: center;
+}
+
+.tela-signup .botao-principal {
+    width: 400px;
+    height: 20vh;
+    text-align: center;
+}
+
+.tela-signup form, .tela-signup form .cad-signup {
+    width: 100%;
+  }
+
+form .cad-signup {
+    width: 400px;
+    height: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+}
+
+label {
+    width: 400px;
+    height: 20px;
+    position: relative;
+    text-align: left;
+    margin-bottom: 0%;
+}
+
+input {
+    width: 400px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+ .botao-signup {
+    cursor: pointer;
+    color: black;
+    background-color: rgb(159, 238, 79);
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: .05rem;
+    border-radius: 20px;
+    border: none;
+    opacity: .8;
+    transition: .3s;
+  }
