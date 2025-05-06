@@ -3,12 +3,121 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: 'Century Gothic';
 }
 
-hmtl,
 body
 {
-  /* vh -  viewport height */
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: whitesmoke;
+  align-items: center;
 }
+
+.tela-verificacao {
+  width: 400px;
+  height: min-content;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.tela-verificacao .titulo {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.tela-verificacao .titulo h2 {
+  text-align: center;
+}
+
+
+.tela-verificacao .botao-voltar {
+  width: 35px;
+  height: 35px;
+  justify-content: left;
+  align-items: flex-start;
+  border-radius: 50%;
+}
+
+.tela-verificacao .icone {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.tela-verificacao .icone img {
+  width: 60px;
+  height: 60px;
+}
+
+.tela-verificacao h4 {
+  font-size:  1.3rem;
+  font-weight: 600;
+  letter-spacing: .04rem;
+  color: black;
+}
+
+.tela-verificacao form, .tela-verificacao form .classe-input {
+  width: 100%;
+}
+
+.tela-verificacao form .classe-input {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.tela-verificacao form input {
+  width: 55px;
+  height: 55px;
+  margin: 0 8px;
+  font-size:  1.5rem;
+  text-align: center;
+  background: #f0f0f0;
+  color: transparent;
+  text-shadow: 0 0 0 #040305;
+  transition: .1s ease-in-out;
+  border: none;
+  border-radius: 50%;
+}
+
+.tela-verificacao form input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.tela-verificacao form input:focus{
+  outline: 1px solid #4135d6;
+  outline-offset: 0.5px;
+
+}
+
+.tela-verificacao form .botao-confirmar {
+  cursor: pointer;
+  pointer-events: none;
+  color: black;
+  background-color: rgb(159, 238, 79);
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: .05rem;
+  border-radius: 20px;
+  border: none;
+  opacity: .8;
+  transition: .3s;
+}
+
+.tela-verificacao form .botao-confirmar.ativo {
+  opacity: 1;
+  pointer-events: auto;
+}
+

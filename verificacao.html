@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/verificacao.css">
     <title>Verification</title>
 </head>
 <body>
     <div class="tela-verificacao">
         <div class="titulo">
-            <button class="botao-voltar"></button>
-            <h1>Verification</h1>
+            <button class="botao-voltar"><a href="signup.html"><</a></button>
+            <h2>Verification</h2>
+        </div> 
+        
+        <div class="icone">
+            <img src="imagens/seguranca.png" alt="icone ">
         </div>
-        <div class="codigo">
-            <img src="" alt="icone ">
-            <h2>Verification Code</h2>
-            <p>Enter the verification code we've sent to your email</p>
-
-            
-            <button class="botao-confirmar">Confirm</button>
-            <p>Didn't receive the code? <a href="#">Resend</a> </p>
-        </div>
+        <h4>Verification Code</h4>
+        <p>Enter the verification code we've sent to your email</p>  
+        <form >
+            <div class="classe-input">
+                <input type="number">
+                <input type="number" disabled>
+                <input type="number" disabled>
+                <input type="number" disabled>
+            </div>  
+            <button class="botao-confirmar ativo">Confirm</button>
+        </form>     
+        <br>
+        <p>Didn't receive the code? <a href="verificacao.html">Resend</a> </p>      
     </div>
 </body>
 </html>
