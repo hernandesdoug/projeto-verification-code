@@ -45,11 +45,13 @@ form {
 }
 
 .btn-switch {
-  width: 200px;
+  width: 350px;
+  height: 40px;
   margin-top: 40px;
   position: relative;
   border-radius: 30px;
   box-shadow: 0 0 7px 0 greenyellow;
+  justify-content: space-between;
 }
 
 .btn-switch button {
@@ -58,18 +60,20 @@ form {
   border: none;
   position: relative;
   padding: 10x 29px;
+
 }
 
 .btn-color {
   position: absolute;
-  width: 108px;
-  height :100%;
+  width: 175px;
+  height: 90%;
+  margin: 2px 2px 2px 2px;
   background: linear-gradient(to right, rgb(136, 243, 111), whitesmoke);
   border-radius: 60px;
   transition: .3s;
 }
 
-input[type="tel"], input[type="password"] {
+input {
   border: none;
   margin-top: 20px;
   border-radius: 60px;
@@ -77,6 +81,8 @@ input[type="tel"], input[type="password"] {
   outline: none;
   width: 100%;
   border: 0.2px solid black;
+  text-align: left;
+  position: relative;
 }
 
 label {
@@ -87,12 +93,23 @@ label {
   margin-top: 10px;
 }
 
+.form-group {
+  display: none;
+  text-align: left;
+  position: relative;
+  width: 350px;
+}
+
+.active {
+  display: block;
+}
+
 .div-check {
   margin: 10px 0 0 5px;
   width: 80%;
   font-size: 13px;
   position: relative;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 button[type="submit"] {
