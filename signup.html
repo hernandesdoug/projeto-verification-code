@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/signup.css">
     <title>Sign Up</title>
 </head>
+
 <body>
     <div class="tela-signup">
         <div class="titulo">
@@ -14,28 +16,33 @@
             <p>Create an account or log in to explore about our app</p>
         </div>
         <div class="botao-principal">
+            <div class="botao-cor"></div>
             <button>Sign Up</button>
             <button>Log In</button>
         </div>
         <form action="verificacao.html">
-            <div class="cad-signup">
-                <div class="nome">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name">
+           <div class="cad-signup">
+                <div class="label-name">
+                    <label for="first-name" id="ft-name">First Name</label>
+                    <label for="last-name" id="lt-name">Last Name</label>
                 </div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="birth-date">Date of Birth</label>
-                <input type="date" name="birth-date" id="birth-date" placeholder="DD/MM/AAAA">
-                <label for="phone-number">Phone Number</label>
-                <input type="tel" name="phone-number" id="phone-number">
-                <label for="password">Set Password</label>
-                <input type="password" name="password" id="password">
-                <button class="botao-signup">Sign Up</button>
-            </div>
-        </form>
+                <div class="input-name">    
+                    <input type="text" name="fst-name" id="txt-fname">
+                    <input type="text" name="lst-name" id="txt-lname">
+                </div>
+                <div class="div-dados">
+                    <label for="email">Email</label> 
+                    <input type="email">
+                    <label for="date-birth">Date of Birth</label>
+                    <input type="date">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel">
+                    <label for="password">Set Password</label>
+                    <input type="password">
+                </div>
+            <button class="botao-signup">Sign Up</button>
+           </div>    
+        </form>   
     </div>
 </body>
 </html>

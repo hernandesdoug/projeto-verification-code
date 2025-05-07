@@ -3,78 +3,116 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Century Gothic';
+    font-family: "Bebas Neue", sans-serif;
 }
 
 body
 {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  background: whitesmoke;
-  align-items: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tela-signup {
+    background-color: white;
+    padding: 6px;
     width: 400px;
-    height: min-content;
+    height: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    align-content: center;
+    position: relative;
 }
 
-.tela-signup form .cad-signup {
-    margin: 30px 0;
-    display: flex;
-    justify-content: center;
-  }
-.tela-signup .titulo {
-    width: 400px;
-    height: 20vh;
+ .titulo {
+    width: 350px;
+    height: 100px;
+    align-items: center;
     text-align: center;
+    margin: 20px 10px 10px 10px;
 }
 
-.tela-signup .botao-principal {
-    width: 400px;
-    height: 20vh;
-    text-align: center;
+.botao-principal {
+    width: 200px;
+    margin-top: 40px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 0 greenyellow;
 }
 
-.tela-signup form, .tela-signup form .cad-signup {
-    width: 100%;
+.botao-principal  button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10x 29px;
+  }
+  
+  .botao-cor {
+    position: absolute;
+    width: 108px;
+    height :100%;
+    background: linear-gradient(to right, rgb(136, 243, 111), whitesmoke);
+    border-radius: 60px;
+    transition: .3s;
   }
 
-form .cad-signup {
-    width: 400px;
-    height: 20px;
+form .cad-signup{
+    width: 350px;
+    height: 300px;
+    align-items: left;
+    text-align: left;
+    margin: 20px 10px 10px 10px;
     flex-direction: column;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 8px;
+    border: none;
+    border-radius: 50%;
 }
 
-label {
-    width: 400px;
+.label-name, .input-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ft-name, #lt-name {
+    width: 140px;
     height: 20px;
     position: relative;
     text-align: left;
-    margin-bottom: 0%;
 }
 
-input {
-    width: 400px;
+#txt-fname, #txt-lname {
+    border: none;
+    margin-top: 5px;
+    border-radius: 30px;
+    padding: 8px 8px 8px 8px;
+    outline: none;
+    width: 140px;
+    border: 0.2px solid black;
+}
+
+.div-dados label {
+    width: 350px;
     height: 20px;
-    border-radius: 20px;
+    position: relative;
 }
 
+.div-dados input {
+    border: 0.2px solid black;
+    margin-top: 10px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 100%;
+}
  .botao-signup {
     cursor: pointer;
     color: black;
     background-color: rgb(159, 238, 79);
     width: 100%;
+    margin-top: 5px;
     padding: 10px 0;
     font-size: 1.3rem;
     font-weight: 400;
