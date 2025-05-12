@@ -6,8 +6,7 @@
     font-family: "Bebas Neue", sans-serif;
 }
 
-body
-{
+body {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -26,7 +25,7 @@ body
     position: relative;
 }
 
- .titulo {
+.titulo {
     width: 350px;
     height: 100px;
     align-items: center;
@@ -34,41 +33,41 @@ body
     margin: 20px 10px 10px 10px;
 }
 
-.botao-switch {
+#btn-check {
+    display: none;
+}
+
+.switch {
+    position: relative;
+    background: rgb(241, 227, 227);
     width: 350px;
-    height: 40px;
-    display: flex;
-    border: 0.2px solid greenyellow;
+    height: 50px;
     border-radius: 30px;
-}
-
-.btn-signup {
-    padding: 5px 12px;
-    background: linear-gradient(45deg,rgb(136, 243, 111), whitesmoke);
-    margin-top: 2px;
-    margin-bottom: 2px;
-    border-radius: 50px;
-    text-align: right;
-    margin-left: 4px;
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition: all .5s ease-in-out;
     cursor: pointer;
-    transition: 0.3s ease;
 }
 
-.btn-login {
-    padding: 5px 12px;
-    background: linear-gradient(45deg,rgb(136, 243, 111), whitesmoke);
-    margin-top: 2px;
-    margin-bottom: 2px;
-    border-radius: 50px;
-    text-align: right;
-    margin-left: 4px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: 0.3s ease;
+.slider {
+    position: absolute;
+    background: greenyellow;
+    border-radius: 30px;
+    width: 150px;
+    height: 45px;
+    transition: all .5s ease-in-out;
 }
 
-form .cad-signup{
+#btn-check:checked~.switch {
+    background: gainsboro;
+}
+
+#btn-check:checked~.switch .slider {
+    transform: translateX(180px);
+}
+
+form .cad-signup {
     width: 350px;
     height: 300px;
     align-items: left;
@@ -80,19 +79,22 @@ form .cad-signup{
     border-radius: 50%;
 }
 
-.label-name, .input-name {
+.label-name,
+.input-name {
     display: flex;
     justify-content: space-between;
 }
 
-#ft-name, #lt-name {
+#ft-name,
+#lt-name {
     width: 140px;
     height: 20px;
     position: relative;
     text-align: left;
 }
 
-#txt-fname, #txt-lname {
+#txt-fname,
+#txt-lname {
     border: none;
     margin-top: 0;
     margin-bottom: 10px;
@@ -118,7 +120,8 @@ form .cad-signup{
     outline: none;
     width: 100%;
 }
- .botao-signup {
+
+.botao-signup {
     cursor: pointer;
     color: black;
     background-color: rgb(159, 238, 79);
@@ -132,4 +135,4 @@ form .cad-signup{
     border: none;
     opacity: .8;
     transition: .3s;
-  }
+}
