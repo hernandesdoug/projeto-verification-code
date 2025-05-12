@@ -32,6 +32,40 @@ body {
   margin: 20px 10px 10px 10px;
 }
 
+.botao-switch {
+  width: 350px;
+  height: 40px;
+  display: flex;
+  border: 0.2px solid greenyellow;
+  border-radius: 30px;
+}
+
+.btn-phone {
+  padding: 5px 12px;
+  background: linear-gradient(45deg,rgb(136, 243, 111), whitesmoke);
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 50px;
+  text-align: right;
+  margin-left: 4px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-email {
+  padding: 5px 12px;
+  background: linear-gradient(45deg,rgb(136, 243, 111), whitesmoke);
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 50px;
+  text-align: right;
+  margin-left: 4px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
 form {
   width: 350px;
   height: 300px;
@@ -42,35 +76,6 @@ form {
   display: flex;
   border: none;
   border-radius: 50%;
-}
-
-.btn-switch {
-  width: 350px;
-  height: 40px;
-  margin-top: 40px;
-  position: relative;
-  border-radius: 30px;
-  box-shadow: 0 0 7px 0 greenyellow;
-  justify-content: space-between;
-}
-
-.btn-switch button {
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  position: relative;
-  padding: 10x 29px;
-
-}
-
-.btn-color {
-  position: absolute;
-  width: 175px;
-  height: 90%;
-  margin: 2px 2px 2px 2px;
-  background: linear-gradient(to right, rgb(136, 243, 111), whitesmoke);
-  border-radius: 60px;
-  transition: .3s;
 }
 
 input {
@@ -104,14 +109,29 @@ label {
   display: block;
 }
 
-.div-check {
-  margin: 10px 0 0 5px;
-  width: 80%;
+.input-check {
+  width: 350px;
   font-size: 13px;
   position: relative;
-  justify-content: space-between;
+  display: flex;
 }
 
+.input-check #checkbox {
+  width: 35px;
+  height: 15px;
+  text-align: left;
+}
+
+.input-check #rememberme {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.input-check #forgetpwd {
+  margin-top: 20px;
+  text-align: right;
+}
+ 
 button[type="submit"] {
   background: green;
   color: black;
