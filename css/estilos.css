@@ -191,6 +191,7 @@ a {
   -webkit-user-select: none;
   -ms-user-select: none;
   -webkit-appearance: none;
+  user-select: none;
   background-color: whitesmoke;
   background-image: none;
   border: none;
