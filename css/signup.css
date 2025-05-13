@@ -67,6 +67,17 @@ body {
     transform: translateX(180px);
 }
 
+.switch #slider-login {
+    position: absolute;
+    right: 10px;
+    padding: 55px;
+  }
+  
+  .switch #slider-signup {
+    position: absolute;
+    left: 10px;
+    padding: 40px;
+  }
 form .cad-signup {
     width: 350px;
     height: 300px;
