@@ -121,6 +121,10 @@ label {
   display: block;
 }
 
+.hide {
+  display: none;
+}
+
 .input-check {
   width: 350px;
   font-size: 13px;
