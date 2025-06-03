@@ -18,15 +18,15 @@
         <input type="checkbox" id="btn-check">
         <label for="btn-check" class="switch">
             <span class="slider"></span>
-            <p id="slider-phone">Phone Number</p>
-            <p id="slider-email">Email</p>
+            <p id="slider-phone" onclick="mostraTelefone()">Phone Number</p>
+            <p id="slider-email" onclick="mostraEmail()" >Email</p>
         </label>
         <form>
             <div class="form-group active" id="frm-phone">
                 <label for="phone">Phone Number</label>
                 <input type="tel" name="phone" id="phone-number">
             </div>
-            <div class="form-group " id="frm-email" onclick="mostraEmail()" >
+            <div class="form-group " id="frm-email" >
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email">
             </div>

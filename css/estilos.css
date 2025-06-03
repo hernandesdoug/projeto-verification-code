@@ -118,10 +118,10 @@ label {
 }
 
 .active {
-  display: block;
+  display: block !important;
 }
 
-.hide {
+#frm-phone, #frm-email {
   display: none;
 }
 
