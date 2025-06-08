@@ -101,7 +101,7 @@ body
 
 .tela-verificacao form input:focus{
   outline: 1px solid #4135d6;
-  outline-offset: 0.5px;
+  outline-offset: 3px;
   background-color: #4135d6;
   color: white;
 }
@@ -127,6 +127,9 @@ body
   pointer-events: auto;
 }
 
+.tela-verificacao form button:hover{
+  background-color: rgb(169, 237, 102);
+}
 a {
   text-decoration: none;
 }
