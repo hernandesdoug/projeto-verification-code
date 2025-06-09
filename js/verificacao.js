@@ -32,11 +32,11 @@ document.addEventListener("DOMContentLoaded", function (){
             }
         })
     })
-    
-// const email = document.getElementsByClassName('dados').value;
-// console.log(email)
-// const mostrarEmail = document.getElementById('recebe-email');
-// mostrarEmail.innerHTML = email;
+    let url_string = window.location.href;
+    let url = new URL(url_string);
+    let data = url.searchParams.get("txt-email");   
+    const email = document.getElementById('recebe-email');
+    email.innerHTML = data;
 })
 
 
