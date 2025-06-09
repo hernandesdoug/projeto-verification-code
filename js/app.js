@@ -22,6 +22,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const telefone = document.getElementById("slider-phone");
   email.addEventListener("click", mostraEmail);
   telefone.addEventListener("click", mostraTelefone);
+
+  document.getElementById('olho').addEventListener('mousedown', function() {
+    document.getElementById('password').type = 'text';
+  });
+  
+  document.getElementById('olho').addEventListener('mouseup', function() {
+    document.getElementById('password').type = 'password';
+  });
+  
+  document.getElementById('olho').addEventListener('mousemove', function() {
+    document.getElementById('password').type = 'password';
+  });
 });
 
 

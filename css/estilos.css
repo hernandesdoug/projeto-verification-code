@@ -143,7 +143,14 @@ label {
   margin-top: 20px;
   text-align: right;
 }
- 
+
+.olho {
+  cursor: pointer;
+  left: 160px;
+  position: relative;
+  width: 20px;
+}
+
 button[type="submit"] {
   background: green;
   color: black;

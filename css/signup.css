@@ -136,6 +136,12 @@ form .cad-signup {
     width: 100%;
 }
 
+.olho {
+    cursor: pointer;
+    left: 160px;
+    position: relative;
+    width: 20px;
+}
 .botao-signup {
     cursor: pointer;
     color: black;
