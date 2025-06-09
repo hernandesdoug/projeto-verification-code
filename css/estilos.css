@@ -146,9 +146,10 @@ label {
 
 .olho {
   cursor: pointer;
-  left: 160px;
+  left: 155px;
   position: relative;
-  width: 20px;
+  width: 30px;
+  margin-top: -30px;
 }
 
 button[type="submit"] {
