@@ -100,16 +100,16 @@ form .cad-signup {
     justify-content: space-between;
 }
 
-#ft-name,
-#lt-name {
+#first-name,
+#last-name {
     width: 140px;
     height: 20px;
     position: relative;
     text-align: left;
 }
 
-#txt-fname,
-#txt-lname {
+#first-name,
+#last-name {
     border: none;
     margin-top: 0;
     margin-bottom: 10px;
