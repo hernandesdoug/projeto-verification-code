@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <div class="tela-signup">
-        <div class="titulo">
+    <div class="signup-screen">
+        <div class="signup-title">
             <h1>Get Started Now</h1>
             <p>Create an account or log in to explore about our app</p>
         </div>
@@ -21,8 +21,8 @@
             <p id="slider-signup">Sign Up</p>
             <p id="slider-login"> Log In</p>
         </label>
-        <form action="verificacao.html">
-           <div class="cad-signup active">
+        <form>
+           <div class="form-signup active">
                 <div class="label-name">
                     <label for="first-name">First Name</label>
                     <label for="last-name">Last Name</label>
@@ -31,7 +31,7 @@
                     <input type="text" name="fst-name" id="first-name" required>
                     <input type="text" name="lst-name" id="last-name" required>
                 </div>
-                <div class="dados">
+                <div class="data">
                     <label for="get-email">Email</label> 
                     <input type="email" name="txt-email" id="get-email" required>
                     <label for="date-birth">Date of Birth</label>
@@ -42,7 +42,7 @@
                     <input type="password" name="txt-pwd" id="password" required>
                     <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" alt="" id="olho" class="olho">
                 </div>
-            <button class="botao-signup">Sign Up</button>
+            <button class="btn-signup" onclick="signUp(event)">Sign Up</button>
            </div>    
         </form>   
     </div>

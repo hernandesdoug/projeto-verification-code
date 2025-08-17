@@ -13,7 +13,7 @@ body {
   align-items: center;
 }
 
-.tela-login {
+.login-screen {
   background-color: white;
   padding: 6px;
   width: 400px;
@@ -24,7 +24,7 @@ body {
   position: relative;
 }
 
-.titulo {
+.title-top {
   width: 350px;
   height: 100px;
   align-items: center;
@@ -164,7 +164,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
- .botao-login {
+ .btn-login {
   cursor: pointer;  
   color: black;
   background-color: rgb(159, 238, 79);
@@ -189,7 +189,7 @@ a {
   margin-bottom: 10px;
 }
 
-.cad-rodape {
+.footer {
   text-align: center;
   margin-top: 10px;
 }

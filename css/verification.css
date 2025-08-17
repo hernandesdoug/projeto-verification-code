@@ -14,7 +14,7 @@ body
   align-items: center;
 }
 
-.tela-verificacao {
+.verification-screen {
   background-color: white;
   padding: 6px;
   width: 400px;
@@ -25,7 +25,7 @@ body
   position: relative;
 }
 
- .titulo {
+ .screen-title {
   width: 400px ;
   display: inline-flex;
   justify-content: flex-start;
@@ -40,7 +40,7 @@ body
     color: black;
 }
 
-.seta {
+.arrow-back {
   margin: 10px;
   width: 20px;
   height: 20px;
@@ -49,7 +49,7 @@ body
   transform: rotate(-45deg);
 }
 
-.tela-verificacao .icone {
+.verification-screen .icon {
   width: 90px;
   height: 90px;
   display: flex;
@@ -59,29 +59,29 @@ body
   margin: 0 auto;
 }
 
-.tela-verificacao .icone img {
+.verification-screen .icon img {
   width: 60px;
   height: 60px;
 }
 
-.tela-verificacao h4 {
+.verification-screen h4 {
   font-size:  1.3rem;
   font-weight: 600;
   letter-spacing: .04rem;
   color: black;
 }
 
-.tela-verificacao form, .tela-verificacao form .classe-input {
+.verification-screen form, .verification-screen form .code-input {
   width: 100%;
 }
 
-.tela-verificacao form .classe-input {
+.verification-screen form .code-input {
   margin: 30px 0;
   display: flex;
   justify-content: center;
 }
 
-.tela-verificacao form input {
+.verification-screen form input {
   width: 55px;
   height: 55px;
   margin: 0 8px;
@@ -95,18 +95,18 @@ body
   border-radius: 50%;
 }
 
-.tela-verificacao form input::-webkit-inner-spin-button {
+.verification-screen form input::-webkit-inner-spin-button {
   display: none;
 }
 
-.tela-verificacao form input:focus{
+.verification-screen form input:focus{
   outline: 1px solid #4135d6;
   outline-offset: 3px;
   background-color: #4135d6;
   color: white;
 }
 
-.tela-verificacao form .botao-confirmar {
+.verification-screen form .btn-confirm {
   cursor: pointer;
   pointer-events: none;
   color: black;
@@ -122,12 +122,12 @@ body
   transition: .3s;
 }
 
-.tela-verificacao form .botao-confirmar.ativo {
+.verification-screen form .btn-confirm.ativo {
   opacity: 1;
   pointer-events: auto;
 }
 
-.tela-verificacao form button:hover{
+.verification-screen form button:hover{
   background-color: rgb(169, 237, 102);
 }
 a {

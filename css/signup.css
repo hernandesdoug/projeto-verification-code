@@ -14,7 +14,7 @@ body {
     align-items: center;
 }
 
-.tela-signup {
+.signup-screen {
     background-color: white;
     padding: 6px;
     width: 400px;
@@ -25,7 +25,7 @@ body {
     position: relative;
 }
 
-.titulo {
+.signup-title {
     width: 350px;
     height: 100px;
     align-items: center;
@@ -82,7 +82,7 @@ body {
  #a-login {
     text-decoration: none;
  } 
-form .cad-signup {
+form .form-signup {
     width: 350px;
     height: 300px;
     align-items: left;
@@ -120,13 +120,13 @@ form .cad-signup {
     border: 0.2px solid black;
 }
 
-.dados label {
+.data label {
     width: 350px;
     height: 20px;
     position: relative;
 }
 
-.dados input {
+.data input {
     border: 0.2px solid black;
     margin-top: 0;
     margin-bottom: 10px;
@@ -142,7 +142,7 @@ form .cad-signup {
     position: absolute;
     width: 30px;
 }
-.botao-signup {
+.btn-signup {
     cursor: pointer;
     color: black;
     background-color: rgb(159, 238, 79);
