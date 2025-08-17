@@ -1,37 +1,67 @@
 
-function mostraEmail() {
+function showEmail() {
   const slider = document.getElementById("slider")
   const email = document.getElementById("frm-email");
-  const telefone = document.getElementById("frm-phone");
+  const phoneNumber = document.getElementById("frm-phone");
   email.classList.add("active");
-  telefone.classList.remove("active");
+  phoneNumber.classList.remove("active");
   slider.classList.add("slider-check")
 }
 
-function mostraTelefone() {
+function showPhone() {
   const slider = document.getElementById("slider")
-  const telefone = document.getElementById("frm-phone");
+  const phoneNumber = document.getElementById("frm-phone");
   const email = document.getElementById("frm-email");
-  telefone.classList.add("active");
+  phoneNumber.classList.add("active");
   email.classList.remove("active");
   slider.classList.remove("slider-check")
 }
 
+async function validateLogin(event) {
+  event.preventDefault();
+  const email = document.getElementById("frm-email").value;
+  const password = document.getElementById("password").value;
+
+  try {
+    const response = await fetch("http://localhost:3333/user/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      body: JSON.stringify(email, password)
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data);
+      const id = data.id;
+      // const url = `welcome_page.html?id=${id}`;
+      window.location.href = "welcome_page.html";
+    } else {
+      const errorData = await response.json();
+      console.error("Login failed", errorData.message);
+      alert(errorData.message);
+    }
+  } catch (error) {
+    console.error("Unexpected error!", error);
+  }
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   const email = document.getElementById("slider-email");
-  const telefone = document.getElementById("slider-phone");
-  email.addEventListener("click", mostraEmail);
-  telefone.addEventListener("click", mostraTelefone);
+  const phoneNumber = document.getElementById("slider-phone");
+  email.addEventListener("click", showEmail);
+  phoneNumber.addEventListener("click", showPhone);
 
-  document.getElementById('olho').addEventListener('mousedown', function() {
+  document.getElementById('olho').addEventListener('mousedown', function () {
     document.getElementById('password').type = 'text';
   });
-  
-  document.getElementById('olho').addEventListener('mouseup', function() {
+
+  document.getElementById('olho').addEventListener('mouseup', function () {
     document.getElementById('password').type = 'password';
   });
-  
-  document.getElementById('olho').addEventListener('mousemove', function() {
+
+  document.getElementById('olho').addEventListener('mousemove', function () {
     document.getElementById('password').type = 'password';
   });
 });
