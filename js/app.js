@@ -17,9 +17,8 @@ function showPhone() {
   slider.classList.remove("slider-check")
 }
 
-async function validateLogin(event) {
-  event.preventDefault();
-  const email = document.getElementById("frm-email").value;
+async function validateLogin() {
+  const email = document.getElementById("log-email").value;
   const password = document.getElementById("password").value;
 
   try {
@@ -34,9 +33,9 @@ async function validateLogin(event) {
     if (response.ok) {
       const data = await response.json();
       console.log(data);
-      const id = data.id;
-      // const url = `welcome_page.html?id=${id}`;
-      window.location.href = "welcome_page.html";
+      // const id = data.id;
+      const url = "welcome.html";
+      window.location.href = url;
     } else {
       const errorData = await response.json();
       console.error("Login failed", errorData.message);
@@ -44,6 +43,7 @@ async function validateLogin(event) {
     }
   } catch (error) {
     console.error("Unexpected error!", error);
+    alert(error);
   }
 };
 

@@ -1,3 +1,5 @@
+let id = "";
+let email = "";
 document.addEventListener("DOMContentLoaded", function (){
     const botao = document.querySelector("button");
     const inputs = document.querySelectorAll("input");
@@ -32,11 +34,13 @@ document.addEventListener("DOMContentLoaded", function (){
             }
         })
     })
-    let url_string = window.location.href;
-    let url = new URL(url_string);
-    let data = url.searchParams.get("txt-email");   
-    const email = document.getElementById('recebe-email');
-    email.innerHTML = data;
+    let params = new URLSearchParams(window.location.search);
+    let param = params.get("id");
+    id = param;
+    let paramEmail = params.get("email");
+    email = paramEmail;
+    let emailText = document.getElementById("get-email");
+    emailText.innerHTML = paramEmail;
 })
 
 

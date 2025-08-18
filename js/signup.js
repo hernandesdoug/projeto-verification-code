@@ -12,7 +12,7 @@ async function signUp(event){
   const phoneNumber = document.getElementById("phone-number").value;
 
   try{
-    const response = await fetch("http://localhost:3333/users",{
+    const response = await fetch("http://localhost:3333/user",{
         method:  "POST",
         headers: {
             "Content-Type": "application/json; charset=utf-8"
@@ -30,7 +30,8 @@ async function signUp(event){
         console.log(data);
         localStorage.clear();
         const id = data.id;
-        const url = `verification.html?id=${id}`;
+        const emailData = email;
+        const url = `verification.html?id=${id}&email=${emailData}`;
         window.location.href = url;          
     }else {
         const errorData = await response.json();
