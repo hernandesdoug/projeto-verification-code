@@ -21,29 +21,34 @@ async function validateLogin() {
   const email = document.getElementById("log-email").value;
   const password = document.getElementById("password").value;
 
+  const loginData  = {
+    email: email,
+    password: password
+};
+
   try {
-    const response = await fetch("http://localhost:3333/user/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json; charset=utf-8"
-      },
-      body: JSON.stringify(email, password)
+      const response = await fetch("http://localhost:3333/user/login", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json; charset=utf-8"
+        },
+        body: JSON.stringify(loginData)
     });
 
     if (response.ok) {
-      const data = await response.json();
-      console.log(data);
-      // const id = data.id;
-      const url = "welcome.html";
-      window.location.href = url;
+        const data = await response.json();
+        console.log(data);
+        const id = data.id;
+        const url = `welcome.html?id=${id}`;
+        window.location.href = url;
     } else {
-      const errorData = await response.json();
-      console.error("Login failed", errorData.message);
-      alert(errorData.message);
+        const errorData = await response.json();
+        console.error("Login failed", errorData.message);
+        alert(errorData.message);
     }
   } catch (error) {
-    console.error("Unexpected error!", error);
-    alert(error);
+      console.error("Unexpected error!", error);
+      alert(error);
   }
 };
 
