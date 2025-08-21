@@ -3,14 +3,20 @@ let email = "";
 
 async function verifyCode(event) {  
     event.preventDefault();
-
+    const codeInputs = document.querySelectorAll("input");
+   
     try {
-        const response = await fetch(`http://localhost:3333/user/${id}`, {
-              method: "get",
+        let verificationCode = "";
+        for (let i = 0; i < codeInputs.length; i++){
+           verificationCode =  verificationCode + codeInputs[i].value;
+            console.log(verificationCode);
+        }
+        const response = await fetch(`http://localhost:3333/user/${id}/${verificationCode}`, {
+              method: "POST",
               headers: {
                 "Content-Type": "application/json; charset=utf-8"
               },
-              body: JSON.stringify({ id, code })
+              body: JSON.stringify({ id, verificationCode })
         })
         if(response.ok){
             const data = await response.json();
