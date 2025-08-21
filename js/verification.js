@@ -16,7 +16,7 @@ async function verifyCode(event) {
             const data = await response.json();
             console.log(data);
             const id = data.id;
-            const url = `welcome.html?id=${id}`;
+            const url = `profile.html?id=${id}`;
             window.location.href = url;  
         }else {
             const errorData = await response.json();

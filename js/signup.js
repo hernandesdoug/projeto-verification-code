@@ -38,9 +38,10 @@ async function signUp(event){
         console.error("Login failed", errorData.message);
         alert(errorData.message);
     }
-} catch(error){
-    console.error("Unexpected error!", error);
-}
+  } catch(error){
+      console.error("Unexpected error!", error);
+      alert("Unexpected error!", error);
+  }
 }
 document.addEventListener("DOMContentLoaded", function () {
   const login= document.getElementById("slider-login");  

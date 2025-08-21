@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/profile.css">
+  <title>Profile</title>
+</head>
+
+<body>
+  <div class="title-profile">
+    <h1>Welcome!</h1>
+  </div>
+  <form>
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name">
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name">
+    <label for="email">Email:</label>
+    <input type="text" id="email">
+    <label for="phone-number">Phone Number:</label>
+    <input type="tel" id="phone-number">
+    <label for="date-birth">Date Of Birth:</label>
+    <input type="text" id="date-birth">
+    <label for="password">Password:</label>
+    <input type="tel" id="password">
+  </form>
+  <div class="buttons">
+    <button onclick="updateProfile(event)">Update</button>
+    <button onclick="deleteProfile(event)">Delete</button>
+    <button onclick="logoutProfile(event)">Log Out</button>
+  </div>
+</body>
+</html>
