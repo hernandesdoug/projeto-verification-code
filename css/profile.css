@@ -7,10 +7,23 @@
 }
 
 html, 
-body, 
-form {
+body 
+{
     min-width: 100vw;
+
+}
+.title-profile {
+    margin-top: 50px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -32,5 +45,15 @@ input {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 0 30px;
+    margin-top: 10px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
