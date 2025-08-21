@@ -30,7 +30,9 @@ async function verifyCode(event) {
             alert(errorData.message);
         }
     } catch (error) {
-        console.error("Unexpected error!", error);
+        const errorData = await response.json();
+        console.error("Login failed", errorData.message);
+        alert(errorData.message);
     }
 
 }

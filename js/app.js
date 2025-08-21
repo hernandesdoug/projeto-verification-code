@@ -36,19 +36,20 @@ async function validateLogin() {
     });
 
     if (response.ok) {
-      const data = await response.json();
-      console.log(data);
-      const id = data.id;
-      const url = `profile.html?id=${id}`;
-      window.location.href = url;
+        const data = await response.json();
+        console.log(data);
+        const id = data.id;
+        const url = `profile.html?id=${id}`;
+        window.location.href = url;
     } else {
-      const errorData = await response.json();
-      console.error("Login failed", errorData.message);
-      alert(errorData.message);
+        const errorData = await response.json();
+        console.error("Login failed", errorData.message);
+        alert(errorData.message);
     }
   } catch (error) {
-    console.error("Unexpected error!", error);
-    alert("Unexpected error!", error);
+    const errorData = await response.json();
+    console.error("Login failed", errorData.message);
+    alert(errorData.message);
   }
 };
 
