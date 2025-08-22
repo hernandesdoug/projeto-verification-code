@@ -17,7 +17,8 @@ function showPhone() {
   slider.classList.remove("slider-check")
 }
 
-async function validateLogin() {
+async function validateLogin(event) {
+  event.preventDefault()
   const email = document.getElementById("log-email").value;
   const password = document.getElementById("password").value;
 
